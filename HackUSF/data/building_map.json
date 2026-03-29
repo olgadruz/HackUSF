@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    { "id": "entrance",  "label": "Entrance", "x": 0, "y": 0 },
+    { "id": "stairs",  "label": "stairs",  "x": 0,  "y": 18.07 },
+    { "id": "elevator", "label": "elevator",   "x": 0,  "y": 6.58  },
+    { "id": "room_214",     "label": "room 214",       "x": 0,  "y": 28  },
+    { "id": "trash",      "label": "trash", "x": 15, "y": 28 },
+    { "id": "hackroom",      "label": "hackroom",        "x": 15,  "y": 16  },
+    { "id": "big_window",      "label": "big window", "x": 15, "y": 0 }
+  ],
+  "edges": [
+    { "from": "entrance",  "to": "elevator",   "dist": 6.58  },
+    { "from": "elevator",  "to": "stairs",     "dist": 11.49 },
+    { "from": "stairs",    "to": "room_214",   "dist": 9.93  },
+    { "from": "room_214",  "to": "trash",      "dist": 15.0  },
+    { "from": "trash",     "to": "hackroom",   "dist": 12.0  },
+    { "from": "hackroom",  "to": "big_window", "dist": 16.0  },
+    { "from": "entrance",  "to": "big_window", "dist": 15.0  }
+  ]
+}
